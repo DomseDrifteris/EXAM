@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.text_color {
+    color: rgba(85, 85, 85, 1);
+}
+
+.wrapper {
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.Header_menu {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.redsoon {
+    color: pink;
+    font-size: medium;
+}
+
+.hero {
+    padding-top: 80px;
+    font-size: x-large;
+    flex-wrap: wrap;
+    width: 274px;
+    margin-bottom: 70px;
+}
+
+.wrap img {
+    height: 400px;
+    float: right;
+    justify-content: flex-end;
+    top: 110px;
+}
+
+.wrap {
+    display: flex;
+    background-image: url("graphic.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+
+}
+
+.wrap img {
+    display: none;
+}
+
+.Sign_up {
+    border-color: orange;
+    border-radius: 50px;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+.background-color_orng {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100vh;
+}
+
+.advert {
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.press {
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.press ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-areas:
+        "1 2"
+        "3 5";
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.press ul li a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 30px;
+    display: flex;
+    align-self: center;
+
+}
+
+.press ul img {
+    height: 40px;
+}
+
+.press ul li {
+    display: flex;
+    justify-items: center;
+}
+
+.fourpress {
+    visibility: hidden;
+}
+
+.gridslide {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.NFT_pic {
+    width: 290px;
+
+}
+
+.info_box {
+    display: flex;
+    background-color: #EEEEEE;
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.series_name {
+    color: orange;
+    font-size: small;
+}
+
+.gray {
+    color: gray;
+    font-size: small;
+}
+
+.price {
+    display: flex;
+    height: 30px;
+    align-items: center;
+
+}
+
+.price img {
+    height: 22px;
+    width: 13;
+    align-self: center;
+
+}
+
+.showcase-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+
+}
+
+.showcase-list::-webkit-scrollbar {
+    width: 2vw;
+    position: bottom;
+}
+
+.showcase-list::-webkit-scrollbar-thumb {
+    background-color: #999999;
+}
+
+.showcase-list::-webkit-scrollbar-track {
+    background-color: #EEEEEE;
+}
+
+.showcase_textBG {
+    font-size: larger;
+}
+
+.OpenSeaxd {
+    color: inherit;
+}
+
+.section_cut {
+    height: 600px;
+    border-top: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    background-image: url(design-82a0ada5-644e-4b87-ae41-88faf9684ea3.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+
+}
+
+.biggertxt {
+    font-size: 21px;
+
+}
+
+.soon_NFT {
+    margin-top: 40px;
+    text-align: left;
+    font-size: larger;
+    height: 650px;
+    width: 200px;
+}
+
+.NFT_NO {
+    display: none;
+}
+
+.bigtext {
+    font-size: 56px;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+.left ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+}
+
+.right ul {
+    list-style: none;
+    padding: 0;
+    width: 100px;
+    display: grid;
+    gap: 7px;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right ul li {
+    color: rgba(85, 85, 85, 1);
+}
+
+.right ul:before {
+    content: attr(aria-label);
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-bottom: 12px;
+    color: #999999;
+}
+
+.copyright {
+    color: rgba(85, 85, 85, 1);
+    font-size: large;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    height: 30px;
+}
+
+@media only screen and (min-width: 450px) {
+    .wrapper {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    header {
+        margin-top: 30px;
+    }
+
+    .header-burger {
+        display: none;
+    }
+
+    .Header_menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .Header_menu a {
+        text-decoration: none;
+        color: rgba(85, 85, 85, 1);
+    }
+
+    .Header_menu span {
+        color: pink;
+    }
+
+    .wrap img {
+        display: block;
+        height: 600px;
+        margin-right: 200px;
+    }
+
+    .wrap {
+        margin-top: 70px;
+        background-image: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding-top: 80px;
+        font-size: large;
+        flex-wrap: wrap;
+        width: 600px;
+        margin-bottom: 70px;
+    }
+
+    h1 {
+        font-size: 89px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .width_dif {
+        width: 500px;
+    }
+
+    .background-color_orng {
+        background-image: url(background\ \(1\).png);
+        background-size: 100%;
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 40px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    .advert {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+
+    .press ul {
+        grid-template-areas:
+            "1 2 3 4 5";
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .fourpress {
+        visibility: visible;
+    }
+
+    .gridslide {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+    .showcase_textBG {
+        font-size: x-large;
+    }
+
+    .showcase_textBG p {
+        margin-bottom: 50px;
+    }
+
+    .section_cut {
+        height: 670px;
+        border-top: 2px solid #999999;
+        border-bottom: 2px solid #999999;
+        background-image: none;
+        margin-top: 80px;
+        margin-right: 80px;
+        margin-left: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section_cut img {
+        height: 580px;
+        align-self: flex-end;
+        margin-right: 200px;
+    }
+
+    .soon_NFT {
+        margin-top: 180px;
+        margin-left: 0;
+        width: auto;
+
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+    }
+    .copyleft {
+        text-align: end;
+        color: rgba(85, 85, 85, 1);
+        font-size: large;
+        margin-top: 40px;
+        margin-bottom: 90px;
+        height: 30px;
+    }
+    .backgrn {
+        background-image: url(Boomerang.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 220px;
+    }
+    .noth_to_see {
+        visibility: hidden;
+    }
+}
